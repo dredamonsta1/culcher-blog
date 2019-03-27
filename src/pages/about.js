@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Image from '../components/image'
 
 import Layout from '../components/layout'
 
@@ -13,6 +14,7 @@ const AboutPage = function about() {
             <p>simple about page</p>
             <Link to="/">Go back to the homepage</Link>
         </div>
+        <Image />
     </Layout>
   )
 }

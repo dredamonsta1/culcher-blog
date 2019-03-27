@@ -5,16 +5,17 @@ module.exports = {
     author: `Andre Wilkinson`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    // `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
+        name: `Images`,
         path: `${__dirname}/src/images`,
-        // name: `pages`,
-        // path: `${__dirname}/src/pages/2019-16-03`,
+        // name: `Images`,
+        // path: `${__dirname}/src/pages`,
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -33,4 +34,15 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
+
+//   plugins: [
+//   {
+//     resolve: `gatsby-source-filesystem`,
+//     options: {
+//       path: `${__dirname}/path/to/markdown/files`,
+//       name: "markdown-pages",
+//     },
+//   },
+//   `gatsby-transformer-remark`,
+// ]
 }

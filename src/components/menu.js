@@ -17,8 +17,8 @@ const Menu = () => {
     }}>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/feedback">Feedback</Link></li>
-        <li><Link to="/about">about</Link></li>
-        <li><Link to="/page-2">Home2</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/page-2">Blog</Link></li>
     </ul>
       
     </div>
