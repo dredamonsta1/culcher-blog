@@ -7,14 +7,23 @@ module.exports = {
   plugins: [
     // `gatsby-plugin-react-helmet`,
     {
+      //filesystem is needed to view files pics from src or markdownfrom pages folder 
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `Images`,
         path: `${__dirname}/src/images`,
-        // name: `Images`,
-        // path: `${__dirname}/src/pages`,
       },
     },
+
+    {
+      //filesystem is needed to view .md or markdown files from src pages folder 
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `Images`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    //transformer-remark is needed for gasby to readmarkdown 
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -27,7 +36,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        //this changes the favcon or tiny tab icon when you get on the site
+        icon: `src/images/pure-hiphop.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -35,14 +45,5 @@ module.exports = {
     // 'gatsby-plugin-offline',
   ],
 
-//   plugins: [
-//   {
-//     resolve: `gatsby-source-filesystem`,
-//     options: {
-//       path: `${__dirname}/path/to/markdown/files`,
-//       name: "markdown-pages",
-//     },
-//   },
-//   `gatsby-transformer-remark`,
-// ]
+
 }
