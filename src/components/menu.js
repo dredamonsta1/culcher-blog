@@ -1,73 +1,48 @@
 import React from 'react'
 import Link from 'gatsby-link';
-// import 'Navbar'
-// import 'reacstrap'
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    // NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem } from 'reactstrap';
-  
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-    export default class Example extends React.Component {
-        constructor(props) {
-          super(props);
-      
-          this.toggle = this.toggle.bind(this);
-          this.state = {
-            isOpen: false
-          };
-        }
-        toggle() {
-          this.setState({
-            isOpen: !this.state.isOpen
-          });
-        }
-        render() {
-          return (
-            <div>
-              <Navbar color="light" light expand="md">
-                 <NavbarBrand href="/">Nine by Four</NavbarBrand>
-                <NavbarToggler onClick={this.toggle} />
-                <Collapse isOpen={this.state.isOpen} navbar>
-                  <Nav className="ml-auto" navbar>
-                    <NavItem>
-                      <Link to="/page-2">Blog</Link>
-                    </NavItem>
-                    <NavItem>
-                      <Link to="/feedback">Feedback</Link>
-                    </NavItem>
-                    <UncontrolledDropdown nav inNavbar>
-                      <DropdownToggle nav caret>
-                        Options
-                      </DropdownToggle>
-                      <DropdownMenu right>
-                        <DropdownItem>
-                        <Link to="/about">About</Link>
-                        </DropdownItem>
-                        <DropdownItem>
-                        <Link to="/">ninebyfour</Link>
-                        </DropdownItem>
-                        <DropdownItem divider />
-                        <DropdownItem>
-                          Reset
-                        </DropdownItem>
-                      </DropdownMenu>
-                    </UncontrolledDropdown>
-                  </Nav>
-                </Collapse>
-              </Navbar>
-            </div>
-          );
-        }
-      }
+
+export default class Example extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.state = {
+      collapsed: true
+    };
+  }
+
+  toggleNavbar() {
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
+  }
+  render() {
+    return (
+      <div>
+        <Navbar color="faded" light>
+          <NavbarBrand href="/" className="mr-auto"><Link to="/">9X4</Link></NavbarBrand>
+          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+          <Collapse isOpen={!this.state.collapsed} navbar>
+            <Nav navbar>
+              <NavItem>
+                <Link to="/feedback">Feedback</Link>
+              </NavItem>
+              <NavItem>
+              <Link to="/about">About</Link>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/components/">Components</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
+}
+
 
 // const Menu = () => {
 //   return (
