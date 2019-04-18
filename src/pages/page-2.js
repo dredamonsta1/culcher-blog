@@ -32,7 +32,7 @@ const SecondPage = () => (
 
 const indexQuery = graphql `
 query {
-  allMarkdownRemark {
+  allMarkdownRemark(sort: { fields:[frontmatter___date], order: DESC }) {
     edges {
       node {
         id

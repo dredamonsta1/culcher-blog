@@ -34,7 +34,7 @@ import {
           return (
             <div>
               <Navbar color="light" light expand="md">
-                <NavbarBrand href="/">9X4</NavbarBrand>
+                 <NavbarBrand href="/">Nine by Four</NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                   <Nav className="ml-auto" navbar>
