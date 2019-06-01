@@ -10,7 +10,9 @@ const FeedbackPage = function about() {
     
         <div>    
         <h1>Feedback</h1>
-            <p>comment and feedback page</p>
+            <p>comment and feedback?</p>
+            <p>Hit the jack <a href="andrefullstack@gmail.com">andre</a></p>
+            
             <Link to="/">Go back to the homepage</Link>
         </div>
     </Layout>

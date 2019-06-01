@@ -11,7 +11,7 @@ const AboutPage = function about() {
     
         <div>
             <h1>About Us</h1>
-            <p>simple about page</p>
+            <p>We are lovers of the culture, the music, the art. our goal is to provide a place to maintain the purity of the element.</p>
             <Link to="/">Go back to the homepage</Link>
         </div>
         <Image />
