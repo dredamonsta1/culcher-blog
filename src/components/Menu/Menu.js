@@ -21,6 +21,12 @@ const Menu = ({ children }) => {
     <Link to="/Resume">
       <a href="#Resume">Resume</a>
     </Link>
+
+    <Link to="/page-2">
+      <a href="#Resume">About</a>
+    </Link>
+
+
     
     </div>
   )

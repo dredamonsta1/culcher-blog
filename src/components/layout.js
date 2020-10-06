@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './Header'
+import Header from './Header/Header'
 import Menu from './Menu/Menu'
 import './layout.css'
 
@@ -32,13 +32,13 @@ const Layout = ({ children }) => (
           }}
         >
           {children}
-        //   <footer>
-        //     © {new Date().getFullYear()}, Built with
-        //     {` `}
-        //     <a href="https://www.andrewilkinson.com">Beats</a>
-        //   </footer>
+           <footer>
+             © {new Date().getFullYear()}, Built with
+             {` `}
+             <a href="https://www.andrewilkinson.com">Beats</a>
+           </footer>
         </div>
-      // </>
+      </>
     )}
   />
 )
