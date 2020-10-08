@@ -10,15 +10,15 @@ const Menu = ({ children }) => {
     <Link to="/">
       <a className="home-tab" href="#9X4">Home</a>
     </Link>
-    <Link to="/Blog">
+    <Link to="/blog">
       <a href="#Blog">Blog</a>
     </Link>
       
-    <Link to="Projects">    
+    <Link to="/about">    
       <a href="#Projects">Projects</a>
     </Link>
     
-    <Link to="/Resume">
+    <Link to="/page-2">
       <a href="#Resume">Resume</a>
     </Link>
 
