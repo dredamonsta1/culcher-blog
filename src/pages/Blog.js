@@ -11,7 +11,7 @@ const Blog = () => (
     
         <h1>"hello Blog"</h1>
        
-        <Link to="/Blog">Blog</Link>
+        
         </Layout>
         )
 
