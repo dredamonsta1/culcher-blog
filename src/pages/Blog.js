@@ -9,9 +9,9 @@ import Post from '../components/Post'
 const SecondPage = () => (
   <Layout>
   
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    <SEO title="Nine By Four Blog" />
+    <h1>Nine By Four Blog</h1>
+    <p>Talking Culture and Tech</p>
     <StaticQuery query={indexQuery} render={data => {
       return (
         <div>
