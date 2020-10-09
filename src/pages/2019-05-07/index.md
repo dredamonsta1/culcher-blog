@@ -11,7 +11,8 @@ author: "Andre Wilkinson"
 "Mic check"
 
 
-here we go, today is my first real post *(PND)*. This blog is an ode to the spirt of compition, two rappers get in the both and go at it or a group sesh where the creative juices are flowing or a hackathon where your copetting to "make 
+here we go, today is my first real post *(PND)*. This blog is an ode to the spirt of compition, rappers get in the both and make verbal art, this is where I will document my journey as I create a tool for the masses to follow converse and bring a factual aspect to there heros.
+I will talk about hip hop and code and try to level up in the process, lets have some fun.  
 
 
 
