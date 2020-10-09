@@ -16,7 +16,9 @@ const SecondPage = () => (
       return (
         <div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Post title={node.frontmatter.title}
+          <Post 
+          key={node.id}
+          title={node.frontmatter.title}
           author={node.frontmatter.author}
           path={node.frontmatter.path}
           date={node.frontmatter.date}

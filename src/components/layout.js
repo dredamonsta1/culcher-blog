@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './Header/Header'
 import Menu from './Menu/Menu'
-import './layout.css'
+import style from './layout.module.css'
 
 
 const Layout = ({ children }) => (
@@ -22,15 +22,7 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} /> 
         <Menu />
-        {new Date().getDate()}
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: `100%`,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
+        <div className={style.layout}>
           {children}
            <footer>
              © {new Date().getFullYear()}, Built with

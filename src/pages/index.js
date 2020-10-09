@@ -19,7 +19,7 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`HipHop`, `application`, `react`]} />
     
     <h1>Welcome to the 9X4 </h1>
-    <p>blogging my progress.</p>
+    <p>Listing the coulture</p>
     
     <Image />
     <StaticQuery query={indexQuery} render={data => {
