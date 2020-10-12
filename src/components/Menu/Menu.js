@@ -7,22 +7,22 @@ const Menu = ({ children }) => {
   return(
     <div className={style.Menu}>
     <Link to="/">
-      <a className="home-tab" href="#9X4">Home</a>
+      Home
     </Link>
     <Link to="/blog">
-      <a href="#Blog">Blog</a>
+      Blog
     </Link>
       
     <Link to="/about">    
-      <a href="#Projects">Projects</a>
+      Projects
     </Link>
     
     <Link to="/page-2">
-      <a href="#Resume">Resume</a>
+      Resume
     </Link>
 
     <Link to="/page-2">
-      <a href="#Resume">About</a>
+      About
     </Link>
 
 
