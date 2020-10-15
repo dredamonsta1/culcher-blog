@@ -1,6 +1,8 @@
+import React from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
-import React from 'react'
+
+import style from './Header.module.css';
 
 const Header = ({ siteTitle }) => (
   
@@ -30,7 +32,34 @@ const Header = ({ siteTitle }) => (
           
         </Link>
       </h1>
+
+
+      
+      
+      <div className={style.Menu}>
+    <Link to="/">
+      Home
+    </Link>
+    <Link to="/blog">
+      Blog
+    </Link>
+      
+    <Link to="/about">    
+      Projects
+    </Link>
+    
+    <Link to="/page-2">
+      Resume
+    </Link>
+
+    <Link to="/page-2">
+      About
+    </Link>
+
+
+    
     </div>
+      </div>
   </div>
 )
 
