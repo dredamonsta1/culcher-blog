@@ -1,8 +1,9 @@
 *{
     /* display: flex; */
+    /* flex-wrap: wrap; */
     /* flex-direction: row; */
-    /* width: 0px;
-    height: 0px; */
+    /* width: 0px; */
+    /* height: 0px;  */
 }
 
 
@@ -29,4 +30,17 @@
   .Menu a.active {
     background-color: #4CAF50;
     color: white;
+  }
+
+
+  .Header {
+      display: flex;
+      flex-direction: row;
+    background-color: #333;
+    margin-bottom: 0;
+    
+  }
+
+  .Hrader h1 {
+      margin: 0;
   }

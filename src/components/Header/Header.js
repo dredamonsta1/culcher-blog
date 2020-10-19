@@ -6,21 +6,21 @@ import style from './Header.module.css';
 
 const Header = ({ siteTitle }) => (
   
-  <div
-    style={{
-      background: `#333`,
-      marginBottom: `0`,
-    }}
+  <div className={style.Header}
+    // style={{
+    //   background: `#333`,
+    //   marginBottom: `0`,
+    // }}
   >
   
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: `100%`,
-        // padding: `1.45rem 1.0875rem`,
+        // margin: `0 auto`,
+        // maxWidth: `100%`,
+        padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1>
         <Link
           to="/"
           style={{
@@ -44,15 +44,15 @@ const Header = ({ siteTitle }) => (
       Blog
     </Link>
       
-    <Link to="/about">    
+    <Link to="/projects">    
       Projects
     </Link>
     
-    <Link to="/page-2">
+    <Link to="/resume">
       Resume
     </Link>
 
-    <Link to="/page-2">
+    <Link to="/about">
       About
     </Link>
 
