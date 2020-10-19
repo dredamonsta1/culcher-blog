@@ -13,15 +13,15 @@ const Menu = ({ children }) => {
       Blog
     </Link>
       
-    <Link to="/about">    
+    <Link to="/projects">    
       Projects
     </Link>
     
-    <Link to="/page-2">
+    <Link to="/resume">
       Resume
     </Link>
 
-    <Link to="/page-2">
+    <Link to="/about">
       About
     </Link>
 

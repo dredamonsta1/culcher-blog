@@ -18,9 +18,7 @@ const IndexPage = () => (
   
     <SEO title="Home" keywords={[`HipHop`, `application`, `react`]} />
     <div className='main' id='top'>
-      <a href="#bottom">
-        bottom
-      </a>
+
     </div>
     <h1>Welcome to the 9X4 </h1>
     <p>Listing the coulture</p>
@@ -35,12 +33,10 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
     </div>
     <div className='main' id='bottom'>
-      <a href="#top">
-        top
-      </a>
+
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-    <Link to="Blog/">Blog</Link>
+    
+    <Link to="/blog">Blog</Link>
   </Layout>
   
 )
